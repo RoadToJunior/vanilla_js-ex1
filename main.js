@@ -19,14 +19,23 @@ const arr = [4, 3, 645];
 //   return sum;
 // };
 
-addNumbersFromArray(arr);
+// addNumbersFromArray(arr);
+// addScope(4, 5);
 
-addScope(4, 5);
+// function addScope(a, b) {
+//   let sum = 0;
+//   for (; a <= b; a++) {
+//     sum += a;
+//   }
+//   return sum;
+// }
 
-function addScope(a, b) {
+//ex2. .forEach, .reduce
+//reduce
+const addNumbersFromArray = (array) => {
   let sum = 0;
-  for (; a <= b; a++) {
-    sum += a;
-  }
-  return sum;
-}
+  const result = array.reduce((acc, curr) => acc + curr, sum);
+  return result;
+};
+
+addNumbersFromArray(arr);
