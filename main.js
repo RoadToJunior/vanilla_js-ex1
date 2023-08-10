@@ -21,4 +21,12 @@ const arr = [4, 3, 645];
 
 addNumbersFromArray(arr);
 
-// function addScope(a, b) {}
+addScope(4, 5);
+
+function addScope(a, b) {
+  let sum = 0;
+  for (; a <= b; a++) {
+    sum += a;
+  }
+  return sum;
+}
